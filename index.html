@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio List</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="portfolio-page">
+    <section class="hero-section">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7">
+            <span class="eyebrow">Creative Showcase</span>
+            <h1 class="hero-title">Portfolio projects that turn visitors into WhatsApp leads.</h1>
+            <p class="hero-copy">
+              Browse selected work, explore categories, and let clients enquire instantly with one tap.
+            </p>
+          </div>
+          <div class="col-lg-5">
+            <div class="hero-card">
+              <p class="hero-card-label">Quick Contact Flow</p>
+              <ol class="hero-steps">
+                <li>User browses your work</li>
+                <li>Clicks a project card</li>
+                <li>WhatsApp opens with the enquiry message ready</li>
+              </ol>
+              <a class="btn btn-success hero-button" href="#portfolio-grid">Explore Projects</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio-section pb-5" id="portfolio-grid">
+      <div class="container">
+        <div class="section-heading d-flex flex-column flex-md-row justify-content-between align-items-md-end gap-3">
+          <div>
+            <span class="section-tag">Featured Portfolio</span>
+            <h2 class="section-title">Responsive project grid</h2>
+          </div>
+          <p class="section-copy mb-0">
+            Update the project details and WhatsApp number to match your business.
+          </p>
+        </div>
+
+        <div class="row g-4 mt-1">
+          <div class="col-sm-6 col-xl-4">
+            <article class="portfolio-card h-100" data-project="Modern Interior Design" data-category="Interior" data-budget="Starting from $400">
+              <div class="card-image image-one">
+                <span class="badge-chip">Interior</span>
+              </div>
+              <div class="card-body-custom">
+                <div class="d-flex justify-content-between align-items-start gap-3">
+                  <div>
+                    <h3 class="card-title">Modern Interior Design</h3>
+                    <p class="card-text">Elegant room planning and styling for premium homes.</p>
+                  </div>
+                  <span class="price-tag">$400+</span>
+                </div>
+                <button type="button" class="btn enquire-btn w-100 js-whatsapp-btn">Enquire on WhatsApp</button>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-sm-6 col-xl-4">
+            <article class="portfolio-card h-100" data-project="Restaurant Branding Kit" data-category="Branding" data-budget="Starting from $250">
+              <div class="card-image image-two">
+                <span class="badge-chip">Branding</span>
+              </div>
+              <div class="card-body-custom">
+                <div class="d-flex justify-content-between align-items-start gap-3">
+                  <div>
+                    <h3 class="card-title">Restaurant Branding Kit</h3>
+                    <p class="card-text">Menus, logo styling, posters, and launch-ready identity work.</p>
+                  </div>
+                  <span class="price-tag">$250+</span>
+                </div>
+                <button type="button" class="btn enquire-btn w-100 js-whatsapp-btn">Enquire on WhatsApp</button>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-sm-6 col-xl-4">
+            <article class="portfolio-card h-100" data-project="E-commerce UI Design" data-category="Web Design" data-budget="Starting from $550">
+              <div class="card-image image-three">
+                <span class="badge-chip">Web Design</span>
+              </div>
+              <div class="card-body-custom">
+                <div class="d-flex justify-content-between align-items-start gap-3">
+                  <div>
+                    <h3 class="card-title">E-commerce UI Design</h3>
+                    <p class="card-text">Conversion-focused storefront interfaces optimized for all devices.</p>
+                  </div>
+                  <span class="price-tag">$550+</span>
+                </div>
+                <button type="button" class="btn enquire-btn w-100 js-whatsapp-btn">Enquire on WhatsApp</button>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-sm-6 col-xl-4">
+            <article class="portfolio-card h-100" data-project="Personal Portfolio Website" data-category="Portfolio" data-budget="Starting from $180">
+              <div class="card-image image-four">
+                <span class="badge-chip">Portfolio</span>
+              </div>
+              <div class="card-body-custom">
+                <div class="d-flex justify-content-between align-items-start gap-3">
+                  <div>
+                    <h3 class="card-title">Personal Portfolio Website</h3>
+                    <p class="card-text">A clean personal brand site for freelancers, artists, and developers.</p>
+                  </div>
+                  <span class="price-tag">$180+</span>
+                </div>
+                <button type="button" class="btn enquire-btn w-100 js-whatsapp-btn">Enquire on WhatsApp</button>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-sm-6 col-xl-4">
+            <article class="portfolio-card h-100" data-project="Social Media Campaign Pack" data-category="Marketing" data-budget="Starting from $220">
+              <div class="card-image image-five">
+                <span class="badge-chip">Marketing</span>
+              </div>
+              <div class="card-body-custom">
+                <div class="d-flex justify-content-between align-items-start gap-3">
+                  <div>
+                    <h3 class="card-title">Social Media Campaign Pack</h3>
+                    <p class="card-text">Branded post designs and ad creatives for seasonal promotions.</p>
+                  </div>
+                  <span class="price-tag">$220+</span>
+                </div>
+                <button type="button" class="btn enquire-btn w-100 js-whatsapp-btn">Enquire on WhatsApp</button>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-sm-6 col-xl-4">
+            <article class="portfolio-card h-100" data-project="Luxury Real Estate Landing Page" data-category="Landing Page" data-budget="Starting from $350">
+              <div class="card-image image-six">
+                <span class="badge-chip">Landing Page</span>
+              </div>
+              <div class="card-body-custom">
+                <div class="d-flex justify-content-between align-items-start gap-3">
+                  <div>
+                    <h3 class="card-title">Luxury Real Estate Landing Page</h3>
+                    <p class="card-text">High-end single-page presentation for premium property listings.</p>
+                  </div>
+                  <span class="price-tag">$350+</span>
+                </div>
+                <button type="button" class="btn enquire-btn w-100 js-whatsapp-btn">Enquire on WhatsApp</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,245 @@
+:root {
+  --bg-color: #f6f1e8;
+  --surface-color: rgba(255, 255, 255, 0.78);
+  --text-color: #1d2a24;
+  --muted-color: #5e6d66;
+  --accent-color: #1f8f5f;
+  --accent-dark: #146644;
+  --highlight-color: #ea6f3a;
+  --border-color: rgba(29, 42, 36, 0.08);
+  --shadow-soft: 0 24px 60px rgba(24, 39, 32, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+  color: var(--text-color);
+  background:
+    radial-gradient(circle at top left, rgba(234, 111, 58, 0.24), transparent 30%),
+    radial-gradient(circle at top right, rgba(31, 143, 95, 0.18), transparent 24%),
+    linear-gradient(180deg, #fffaf4 0%, var(--bg-color) 100%);
+}
+
+.portfolio-page {
+  min-height: 100vh;
+}
+
+.hero-section {
+  padding: 88px 0 48px;
+}
+
+.eyebrow,
+.section-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(29, 42, 36, 0.08);
+  color: var(--accent-dark);
+  font-size: 0.84rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero-title {
+  margin-top: 1.2rem;
+  font-size: clamp(2.4rem, 6vw, 4.7rem);
+  line-height: 1.02;
+  font-weight: 700;
+  max-width: 11ch;
+}
+
+.hero-copy,
+.section-copy,
+.card-text,
+.hero-steps {
+  color: var(--muted-color);
+}
+
+.hero-copy {
+  margin-top: 1rem;
+  max-width: 560px;
+  font-size: 1.08rem;
+}
+
+.hero-card {
+  padding: 1.75rem;
+  border-radius: 28px;
+  background: var(--surface-color);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: var(--shadow-soft);
+}
+
+.hero-card-label {
+  margin-bottom: 1rem;
+  color: var(--highlight-color);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.82rem;
+}
+
+.hero-steps {
+  margin: 0 0 1.5rem;
+  padding-left: 1.2rem;
+}
+
+.hero-steps li + li {
+  margin-top: 0.55rem;
+}
+
+.hero-button {
+  padding: 0.9rem 1.25rem;
+  border-radius: 14px;
+  font-weight: 600;
+}
+
+.portfolio-section {
+  padding-bottom: 72px;
+}
+
+.section-heading {
+  margin-bottom: 1.2rem;
+}
+
+.section-title {
+  margin-top: 0.85rem;
+  margin-bottom: 0;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 700;
+}
+
+.section-copy {
+  max-width: 420px;
+}
+
+.portfolio-card {
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 18px 45px rgba(26, 34, 30, 0.08);
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 26px 55px rgba(26, 34, 30, 0.12);
+}
+
+.card-image {
+  position: relative;
+  min-height: 220px;
+  padding: 1rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.image-one {
+  background: linear-gradient(135deg, #d3b897, #8a684f);
+}
+
+.image-two {
+  background: linear-gradient(135deg, #f2a65a, #b93826);
+}
+
+.image-three {
+  background: linear-gradient(135deg, #8fd3f4, #4a6cf7);
+}
+
+.image-four {
+  background: linear-gradient(135deg, #d4fc79, #2f9a64);
+}
+
+.image-five {
+  background: linear-gradient(135deg, #fbc2eb, #a18cd1);
+}
+
+.image-six {
+  background: linear-gradient(135deg, #cfd9df, #4f6d7a);
+}
+
+.badge-chip {
+  display: inline-flex;
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  backdrop-filter: blur(10px);
+}
+
+.card-body-custom {
+  padding: 1.4rem;
+}
+
+.card-title {
+  margin-bottom: 0.55rem;
+  font-size: 1.28rem;
+  font-weight: 600;
+}
+
+.card-text {
+  margin-bottom: 1.2rem;
+  line-height: 1.6;
+}
+
+.price-tag {
+  flex-shrink: 0;
+  padding: 0.45rem 0.7rem;
+  border-radius: 12px;
+  background: #ecf8f1;
+  color: var(--accent-dark);
+  font-size: 0.84rem;
+  font-weight: 700;
+}
+
+.enquire-btn {
+  padding: 0.9rem 1rem;
+  border: none;
+  border-radius: 14px;
+  background: linear-gradient(135deg, var(--accent-color), var(--accent-dark));
+  color: #fff;
+  font-weight: 600;
+}
+
+.enquire-btn:hover,
+.enquire-btn:focus {
+  background: linear-gradient(135deg, #23a169, #0f5b3c);
+  color: #fff;
+}
+
+@media (max-width: 991.98px) {
+  .hero-section {
+    padding-top: 64px;
+  }
+
+  .hero-title {
+    max-width: 14ch;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero-section {
+    padding-top: 52px;
+  }
+
+  .hero-card,
+  .portfolio-card {
+    border-radius: 22px;
+  }
+
+  .card-image {
+    min-height: 190px;
+  }
+}
